@@ -1,0 +1,62 @@
+========================================================================
+PLACEMENTPREP | MULTI-AGENT COLLABORATION
+SHARED TASK: Create a realistic one-day placement preparation plan for a student. The plan must cover DSA, aptitude, and core technical interview revision, include breaks, and finish with a short review.
+========================================================================
+
+[SUPERVISOR] Step 1: Planner creates the first draft.
+[PLANNER] THOUGHT/DECISION: Draft an initial schedule
+[PLANNER] PROPOSAL:
+  - 09:00-11:00 DSA problem solving
+  - 11:15-12:45 Core technical revision
+  - 14:00-16:00 Advanced DSA practice
+  - 16:15-16:45 Review
+[PLANNER] SELF-REPORTED ISSUES: ['Aptitude practice is missing', 'DSA time is disproportionately high']
+
+[SUPERVISOR] Step 2: Resource agent reviews coverage and recommends resources.
+[RESOURCE] DECISION: Provide resources and audit topic coverage
+[RESOURCE] MESSAGE: Suggested Striver A2Z for DSA, IndiaBix for aptitude practice, and a DBMS/OOP/OS/CN revision checklist. The first draft omitted aptitude; the revised draft covers all three domains.
+  RESOURCE: DSA: Striver A2Z DSA Sheet
+  RESOURCE: Aptitude: IndiaBix quantitative aptitude practice
+  RESOURCE: Technical: DBMS, OOP, Operating Systems and Computer Networks notes
+[RESOURCE] ISSUES: ['Aptitude is missing from the first draft']
+
+[SUPERVISOR] Step 3: Evaluator independently checks the proposal.
+[EVALUATOR] DECISION: Reject and request revision
+[EVALUATOR] MESSAGE: Rejecting the draft: it does not cover all three required areas and/or lacks breaks. Planner must revise it.
+[EVALUATOR] ISSUES: ['Aptitude', 'Breaks']
+
+[SUPERVISOR] NEGOTIATION: Evaluator rejected the draft.
+[SUPERVISOR] Sending evaluator feedback to Planner for revision.
+[PLANNER] REVISED DECISION: Revise schedule using peer feedback
+[PLANNER] REVISED SCHEDULE:
+  - 09:00-10:15 DSA concepts and problems
+  - 10:15-10:30 Break
+  - 10:30-11:15 Aptitude practice
+  - 11:15-11:30 Break
+  - 11:30-12:30 Core technical interview revision
+  - 17:00-17:20 Review and error log
+
+[SUPERVISOR] Step 4: Resource agent re-checks revised plan.
+[RESOURCE] RE-CHECK: Suggested Striver A2Z for DSA, IndiaBix for aptitude practice, and a DBMS/OOP/OS/CN revision checklist. The first draft omitted aptitude; the revised draft covers all three domains.
+[RESOURCE] COVERAGE OK: True
+
+[SUPERVISOR] Step 5: Evaluator performs final approval.
+[EVALUATOR] FINAL DECISION: Approve
+[EVALUATOR] FINAL MESSAGE: The revised schedule covers all three required areas and includes breaks.
+
+========================================================================
+FINAL APPROVED SCHEDULE
+   09:00-10:15 DSA concepts and problems
+   10:15-10:30 Break
+   10:30-11:15 Aptitude practice
+   11:15-11:30 Break
+   11:30-12:30 Core technical interview revision
+   17:00-17:20 Review and error log
+
+RESOURCES
+   DSA: Striver A2Z DSA Sheet
+   Aptitude: IndiaBix quantitative aptitude practice
+   Technical: DBMS, OOP, Operating Systems and Computer Networks notes
+
+FINAL STATUS: APPROVED
+========================================================================

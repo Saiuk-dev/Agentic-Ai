@@ -1,0 +1,6 @@
+{"time_utc": "2026-11-01T06:50:01.783513+00:00", "event": "sample_files_read", "details": "['app.py', 'ISSUE.txt']"}
+{"time_utc": "2026-11-01T06:50:01.785132+00:00", "event": "mock_ticket_prepared", "details": "Pending human approval; no external transmission."}
+{"time_utc": "2026-11-01T06:50:01.785432+00:00", "event": "mock_ticket_blocked", "details": "Human approval not granted."}
+{"time_utc": "2026-11-01T06:50:14.945267+00:00", "event": "sample_files_read", "details": "['app.py', 'ISSUE.txt']"}
+{"time_utc": "2026-11-01T06:50:24.837973+00:00", "event": "mock_ticket_prepared", "details": "Pending human approval; no external transmission."}
+{"time_utc": "2026-11-01T06:50:24.838418+00:00", "event": "mock_ticket_blocked", "details": "Human approval not granted."}

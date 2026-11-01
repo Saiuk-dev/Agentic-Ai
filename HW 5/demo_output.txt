@@ -1,0 +1,15 @@
+=== UNIT 5 SECURITY AGENT DEMO ===
+Domain: Software engineering / secure code review
+Pre-scan findings:
+- Potential hard-coded credential found in sample configuration.
+- Possible prompt injection found in untrusted repository content.
+Prompt injection indicator: DETECTED
+Synthetic secret sent to model: NO (redacted)
+Untrusted content labelled: YES
+Tool permissions: read allowlisted files + local mock outbox only
+Outbound action: BLOCKED
+Ticket destination: LOCAL_MOCK_OUTBOX_ONLY
+Raw synthetic secret present in report: NO
+Audit log: agent_audit.log
+Final status: BLOCKED_NO_APPROVAL
+=== END DEMO ===
